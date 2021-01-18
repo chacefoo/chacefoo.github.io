@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your title</title>
+    <title>清晨的阳光</title>
     <link>https://chacefoo.github.io/</link>
-    <description>Recent content on Your title</description>
+    <description>Recent content on 清晨的阳光</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 17 Jan 2021 21:22:54 +0800</lastBuildDate><atom:link href="https://chacefoo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>噪声、缺失、异常数据的处理方式总结</title>
-      <link>https://chacefoo.github.io/post/%E5%99%AA%E5%A3%B0%E7%BC%BA%E5%A4%B1%E5%BC%82%E5%B8%B8%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E6%80%BB%E7%BB%93/</link>
+      <link>https://chacefoo.github.io/posts/%E5%99%AA%E5%A3%B0%E7%BC%BA%E5%A4%B1%E5%BC%82%E5%B8%B8%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sun, 17 Jan 2021 21:22:54 +0800</pubDate>
       
-      <guid>https://chacefoo.github.io/post/%E5%99%AA%E5%A3%B0%E7%BC%BA%E5%A4%B1%E5%BC%82%E5%B8%B8%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://chacefoo.github.io/posts/%E5%99%AA%E5%A3%B0%E7%BC%BA%E5%A4%B1%E5%BC%82%E5%B8%B8%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F%E6%80%BB%E7%BB%93/</guid>
       <description>一、噪声的处理 ​	噪声(noise)是被测量的变量的随机误差或方差。我们可以使用基本的数据统计描述技术(例如，盒图或者散点图)和数据可视化方法来识别可能代表噪声的离群点。
 1. 分箱(bining) 分箱方法通过考察数据的“近邻”(即周围的值)来光滑有序的数据值。这些有序的值被分布到一些“捅”或箱中。由于分箱方法考察近邻的值，因此它进行局部的光滑。
 如上图所示，数据首先排序并被划分到大小为3的等频的箱中。对于用箱均值光滑，箱中每一个值都被替换为箱中的均值。类似的，可以使用用箱中位数光滑或者用箱边界光滑等等。
@@ -29,133 +29,6 @@
 4. 将其视为缺失值，利用统计模型填补 该方法的好处是可以利用现有变量的信息，对异常值（缺失值）填补。不过这里最好要视该异常值（缺失值）的特点而定，例如需视是完全随机缺失、随机缺失还是非随机缺失的不同情况而定。
 5. 不做过多处理，根据其性质特点，使用稳健模型加以修饰 如果按参数性质分的话，可以将稳健方法分为参数、非参和半参3种情况，这大致与通常的关于参数的假设、优点一样。
 6. 使用抽样技术或模拟技术，接受更合理的标准误等信息 ​	抽样样本所计算出的均值的标准误，一般来说会更合理，这可以有效应对异常值的影响，但前提是原始样本量不能太少（小于10），小样本的结果不够稳定。另外模拟技术可以利用先验分布特征和样本信息来构建事后预测的概率分布，进行事后模拟，这种技术现在发展的很好，在异常值的应对中，</description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://chacefoo.github.io/posts/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://chacefoo.github.io/posts/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/goisforlovers/</guid>
-      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
-This document is a brief primer on using Go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://chacefoo.github.io/posts/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://chacefoo.github.io/posts/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
-▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title>Test 9</title>
-      <link>https://chacefoo.github.io/posts/test-9/</link>
-      <pubDate>Thu, 09 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/test-9/</guid>
-      <description>Test 9</description>
-    </item>
-    
-    <item>
-      <title>Test 8</title>
-      <link>https://chacefoo.github.io/posts/test-8/</link>
-      <pubDate>Wed, 08 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/test-8/</guid>
-      <description>Test 8</description>
-    </item>
-    
-    <item>
-      <title>Test 7</title>
-      <link>https://chacefoo.github.io/posts/test-7/</link>
-      <pubDate>Tue, 07 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/test-7/</guid>
-      <description>Test 7</description>
-    </item>
-    
-    <item>
-      <title>Test 6</title>
-      <link>https://chacefoo.github.io/posts/test-6/</link>
-      <pubDate>Mon, 06 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/test-6/</guid>
-      <description>Test 6</description>
-    </item>
-    
-    <item>
-      <title>Test 5</title>
-      <link>https://chacefoo.github.io/posts/test-5/</link>
-      <pubDate>Sun, 05 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/test-5/</guid>
-      <description>Test 5</description>
-    </item>
-    
-    <item>
-      <title>Test 4</title>
-      <link>https://chacefoo.github.io/posts/test-4/</link>
-      <pubDate>Sat, 04 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/test-4/</guid>
-      <description>Test 4</description>
-    </item>
-    
-    <item>
-      <title>Test 3</title>
-      <link>https://chacefoo.github.io/posts/test-3/</link>
-      <pubDate>Fri, 03 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/test-3/</guid>
-      <description>Test 3</description>
-    </item>
-    
-    <item>
-      <title>Test 2</title>
-      <link>https://chacefoo.github.io/posts/test-2/</link>
-      <pubDate>Thu, 02 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/test-2/</guid>
-      <description>Test 2</description>
-    </item>
-    
-    <item>
-      <title>Test 1</title>
-      <link>https://chacefoo.github.io/posts/test-1/</link>
-      <pubDate>Wed, 01 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://chacefoo.github.io/posts/test-1/</guid>
-      <description>Test 1 I am referencing a footnote1
-1package main 2 3import &amp;#34;fmt&amp;#34; 4 5func main() { 6 fmt.Println(&amp;#34;{linenos=inline}&amp;#34;) 7} 1 2 3 4 5 6 7  package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;{linenos=table}&amp;#34;) }   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dictum tortor.Morbi laoreet enim id sem euismod lobortis. Donec quam libero, bibendum non cursus vitae, dictum vel eros.  I am the footnote &amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     
   </channel>
